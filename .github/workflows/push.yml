@@ -5,19 +5,16 @@ jobs:
     name: Audit and Publish
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '12'
     - name: Install dependencies
-      uses: felixbrucker/npm@master
-      with:
-        args: ci
+      run: yarn install
     - name: Audit dependencies
-      uses: felixbrucker/npm@master
-      with:
-        args: audit --production
+      run: yarn audit --groups dependencies
     - name: Publish to npm
       if: startsWith(github.ref, 'refs/tags/')
-      uses: felixbrucker/npm@master
       env:
         NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-      with:
-        args: publish --access public
+      run: yarn publish --access public
