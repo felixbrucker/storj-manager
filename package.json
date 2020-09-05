@@ -1,0 +1,33 @@
+{
+    "name": "storj-manager",
+    "description": "A tool to manage multiple windows storj storagenodes.",
+    "version": "1.0.0",
+    "repository": "https://github.com/felixbrucker/storj-manager.git",
+    "bugs": "https://github.com/felixbrucker/storj-manager/issues",
+    "license": "GPL-3.0",
+    "keywords": [
+        "storj",
+        "storagenode",
+        "manager",
+        "windows"
+    ],
+    "dependencies": {
+        "axios": "^0.20.0",
+        "cross-spawn": "^7.0.3",
+        "decompress": "^4.2.1",
+        "js-yaml": "^3.14.0",
+        "lodash": "^4.17.20",
+        "mkdirp": "^1.0.4",
+        "moment": "^2.27.0"
+    },
+    "bin": {
+        "foxy-miner": "./main.js"
+    },
+    "main": "main.js",
+    "scripts": {
+        "start": "node main.js"
+    },
+    "engines": {
+        "node": "^12"
+    }
+}
