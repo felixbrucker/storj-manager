@@ -21,7 +21,7 @@
         "moment": "^2.27.0"
     },
     "bin": {
-        "foxy-miner": "./main.js"
+        "storj-manager": "./main.js"
     },
     "main": "main.js",
     "scripts": {
