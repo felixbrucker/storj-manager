@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const binaryManager = require('./lib/services/binary-manager');
 const storageNodeManager = require('./lib/services/storage-node-manager');
 const config = require('./lib/services/config');
