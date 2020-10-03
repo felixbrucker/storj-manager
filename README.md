@@ -6,7 +6,6 @@ Storj-Manager
 ## Prerequisites
 
 - NodeJS
-- Windows
 
 ## License
 
