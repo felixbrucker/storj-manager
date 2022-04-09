@@ -18,7 +18,7 @@
         "js-yaml": "^3.14.0",
         "lodash": "^4.17.20",
         "mkdirp": "^1.0.4",
-        "moment": "^2.29.0"
+        "moment": "^2.29.2"
     },
     "bin": {
         "storj-manager": "./main.js"
