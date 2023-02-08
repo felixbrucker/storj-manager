@@ -28,6 +28,6 @@
         "start": "node main.js"
     },
     "engines": {
-        "node": "^12"
+        "node": ">=12"
     }
 }
